@@ -66,7 +66,7 @@ word佔用16的bit，可以表達 $-2^{16}$ ~ $2^{16-1}-1$ 有號數，常用的
 > TON
 
 ```Pascal
-ton1(IN := <BOOL>, PT := <TIME>);
+ton1(IN := <條件式>, PT := <Time>);
 ```
 
 只有在 IN 為 TRUE 的時候才會開始計時，如果在計時到一半的時候變為 FALSE 會中斷計時。
@@ -74,7 +74,7 @@ ton1(IN := <BOOL>, PT := <TIME>);
 因為這個特性，可以使用下列的用法重複使用同樣的計時器：
 
 ```Pascal
-ton1(IN := NOT ton1.Q, PT := <TIME>);
+ton1(IN := NOT ton1.Q, PT := <Time>);
 ```
 
 PT 需要輸入Time，如：T#5s、T#50ms，或宣告一個Time在進行輸入也可以。
@@ -88,7 +88,7 @@ ton1.Q
 > R_TRIG
 
 ```Pascal
-rt1(_CLK := <BOOL>);
+rt1(_CLK := <條件式>);
 ```
 
 在階梯圖的上緣觸發在ST語言裡被封裝成物件，因此使用的時候需要先進行宣告。
@@ -165,15 +165,15 @@ $令 \\ a = 1 \ \ b = 1 \\ c = 0 \ \ d = 0$
 
 > IF 條件判斷
 ```Pascal
-IF <BOOL> THEN
+IF <條件式> THEN
 	
 END_IF;
 ```
 
 ```Pascal
-IF <BOOL> THEN
+IF <條件式> THEN
 
-ELSIF <BOOL2> THEN
+ELSIF <條件式2> THEN
 
 ELSE
 
@@ -182,14 +182,14 @@ END_IF;
 
 > CASE 多重選擇
 ```Pascal
-CASE <VAR> OF
-	<STATUS>:
+CASE <變數> OF
+	<狀態>:
 	
-	<STATUS2>:
+	<狀態2>:
 	
-	<STATUS3>:
+	<狀態3>:
 ELSE
-	<DEFAULT STATUS>
+	<其它狀態>
 END_CASE;
 ```
 
@@ -198,7 +198,7 @@ END_CASE;
 **使用前在要先於變數表內宣告要使用的變數**
 
 ```Pascal
-FOR <VAR> := <INIT> TO <GOAL> BY <STEP> DO
+FOR <變數> := <初始值> TO <目標值> BY <遞增值> DO
 	
 END_FOR;
 ```
@@ -206,7 +206,7 @@ END_FOR;
 > WHILE 條件迴圈
 
 ```Pascal
-WHILE <BOOL> DO
+WHILE <條件式> DO
 
 END_WHILE;
 ```
@@ -287,7 +287,7 @@ END_IF;
 ### 狀態機
 在階梯圖有一個經典的用法就是狀態機，在階梯圖在使用S來表達步驟，但在ST語言裡我們使用一個變數來當作步數，並使用CASE來作掃描。
 
-**如要用這種用法有一個重點是，在每次程式的開頭要使用M8002進行歸零，因為在PLC從STOP 到 RUN 的過程中，變數表並不會被歸零。**
+**如要用這種用法有一個重點是，在每次程式的開頭要使用M8002進行歸零，因為在PLC從 STOP 到 RUN 的過程中，變數表並不會被歸零。**
 
 舉例：
 ```Pascal
@@ -313,3 +313,7 @@ CASE wstep OF
 	END_IF;
 END_CASE;
 ```
+
+### 函式與物件
+ST語言可以使用function或struct，前者為單純的函式，而後者為宣告一個物件，但ST語言的物件不像其它的程式語言一樣，這裡的物件只有單純的單一物件功能而以。
+
