@@ -1,0 +1,9 @@
+- curl
+	- 用法：curl <網址>
+	- 用來向網頁發出請求
+	- -X 指定http method 發出 http request
+		- 預設為 GET
+		- 可選 GET、POST、PUT、DELETE、PATCH
+		- OPTIONS 用來顯示所有可用的選項 (需使用 -i 來顯示)
+	- -i 顯示http response 的 header
+-

@@ -13,12 +13,21 @@
  {:block/name "cancelled",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
+ {:block/name "card",
+  :block/created-at 1668004258648,
+  :block/updated-at 1668004258648}
+ {:block/name "contents",
+  :block/created-at 1668004258648,
+  :block/updated-at 1668004258648}
  {:block/name "doing",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
  {:block/name "done",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
+ {:block/name "favorites",
+  :block/created-at 1668004258648,
+  :block/updated-at 1668004258648}
  {:block/name "in-progress",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
@@ -27,16 +36,16 @@
   :block/updated-at 1667010819162}
  {:block/name "linux指令",
   :block/created-at 1667022125751,
-  :block/updated-at 1667029982652}
+  :block/updated-at 1667135220528}
+ {:block/name "nov 9th, 2022",
+  :block/created-at 1668003658417,
+  :block/updated-at 1668003658417}
  {:block/name "now",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
- {:block/name "oct 29th, 2022",
-  :block/created-at 1667009707490,
-  :block/updated-at 1667009710914}
  {:block/name "oct 30th, 2022",
-  :block/created-at 1667135059412,
-  :block/updated-at 1667135059412}
+  :block/created-at 1667135182224,
+  :block/updated-at 1667135182224}
  {:block/name "todo",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
@@ -44,5 +53,8 @@
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
  {:block/name "waiting",
-  :block/created-at 1667010819162, 
-  :block/updated-at 1667010819162}]
+  :block/created-at 1667010819162,
+  :block/updated-at 1667010819162}
+ {:block/name "web",
+  :block/created-at 1668003711269, 
+  :block/updated-at 1668004137125}]
