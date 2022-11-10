@@ -6,4 +6,5 @@
 		- 可選 GET、POST、PUT、DELETE、PATCH
 		- OPTIONS 用來顯示所有可用的選項 (需使用 -i 來顯示)
 	- -i 顯示http response 的 header
+	- -b 發送含cookie (用 & 分開)
 -
