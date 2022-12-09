@@ -14,19 +14,11 @@
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
  {:block/name "card",
-<<<<<<< HEAD
-  :block/created-at 1667141713385,
-  :block/updated-at 1667141713385}
- {:block/name "contents",
-  :block/created-at 1667141713385,
-  :block/updated-at 1667141713385}
-=======
   :block/created-at 1668004258648,
   :block/updated-at 1668004258648}
  {:block/name "contents",
   :block/created-at 1668004258648,
   :block/updated-at 1668004258648}
->>>>>>> 03804f9e808ed45e60d9d9cabdf35f30aa130d66
  {:block/name "doing",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
@@ -34,13 +26,8 @@
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
  {:block/name "favorites",
-<<<<<<< HEAD
-  :block/created-at 1667141713385,
-  :block/updated-at 1667141713385}
-=======
   :block/created-at 1668004258648,
   :block/updated-at 1668004258648}
->>>>>>> 03804f9e808ed45e60d9d9cabdf35f30aa130d66
  {:block/name "in-progress",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
@@ -49,26 +36,10 @@
   :block/updated-at 1667010819162}
  {:block/name "linux指令",
   :block/created-at 1667022125751,
-<<<<<<< HEAD
-  :block/updated-at 1667029982652}
- {:block/name "nov 18th, 2022",
-  :block/created-at 1668785738425,
-  :block/updated-at 1668785738425}
-=======
   :block/updated-at 1667135220528}
- {:block/name "nov 13th, 2022",
-  :block/created-at 1668351290312,
-  :block/updated-at 1668351290312}
- {:block/name "nov 14th, 2022",
-  :block/created-at 1668382259964,
-  :block/updated-at 1668382259964}
- {:block/name "nov 16th, 2022",
-  :block/created-at 1668589413161,
-  :block/updated-at 1668589413161}
- {:block/name "nov 18th, 2022",
-  :block/created-at 1668728214794,
-  :block/updated-at 1668728214794}
->>>>>>> 03804f9e808ed45e60d9d9cabdf35f30aa130d66
+ {:block/name "nov 9th, 2022",
+  :block/created-at 1668003658417,
+  :block/updated-at 1668003658417}
  {:block/name "now",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
@@ -84,6 +55,6 @@
  {:block/name "waiting",
   :block/created-at 1667010819162,
   :block/updated-at 1667010819162}
- {:block/name "web安全",
-  :block/created-at 1668351290559, 
-  :block/updated-at 1668427263564}]
+ {:block/name "web",
+  :block/created-at 1668003711269, 
+  :block/updated-at 1668005179643}]

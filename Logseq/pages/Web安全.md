@@ -1,0 +1,15 @@
+- curl
+	- 用法：curl <網址>
+	- 用來向網頁發出請求
+	- 網址後加 ?來傳入變數
+		- 連結號用 &
+		- 陣列用arr[]=
+	- -X 指定http method 發出 http request
+		- 預設為 GET
+		- 可選 GET、POST、PUT、DELETE、PATCH
+		- OPTIONS 用來顯示所有可用的選項 (需使用 -i 來顯示)
+		  id:: 63717e34-5864-4564-97e8-b71c90d94466
+	- -i 顯示http response 的 header
+	- -b 發送含cookie (用 & 分開)
+	- -d 發送含POST (用 & 分開)
+-
