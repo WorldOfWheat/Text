@@ -84,5 +84,7 @@
   collapsed:: true
   使用管理員執行
 	- su 直接切到管理員模式
+- unzip <路徑>
+  zip解壓縮
 - whoami
   查前當前群組

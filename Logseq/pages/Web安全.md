@@ -1,9 +1,9 @@
 - curl
 	- 用法：curl <網址>
 	- 用來向網頁發出請求
-	- 網址後加 ?來傳入變數
+	- 網址後加 ? 來傳入變數
 		- 連結號用 &
-		- 陣列用arr[]=
+		- PHP陣列用arr[]=
 	- -X 指定http method 發出 http request
 		- 預設為 GET
 		- 可選 GET、POST、PUT、DELETE、PATCH
