@@ -7,6 +7,12 @@
 	- 開啟方法有r, rb, w, w+等
 		- 常用r和w+，一個為只讀，一個為可讀可寫
 - 資料型別
+	- chr(<ASCII>)
+	  ASCII轉char
+	- int(<字串>)
+	  字串轉數字
+	- ord(<字元>)
+	  char轉ASCII
 	- str 字串
 		- len(<字串>)
 		  取得長度
@@ -14,10 +20,6 @@
 		  刪除特定的字元
 		- 裁切使用str = str[<啟始位置>:<結束位置>]
 			- 結束位置會自動-1，因此使用len時不需在-1
-	- int(<字串>)
-	  字串轉數字
-	- chr(<ASCII>)
-	  ASCII轉char
 - 流程控制
 	- for
 		- 計數使用 range(<範圍>)
@@ -37,7 +39,7 @@
 	  r.send(<字串>)
 	  發送字串
 	  r.sendline(<字串>)
-	  發送字串代\n
+	  發送字串代\\n
 - Hash
 	- import hashlib
 	  導入hashlib 函式庫
