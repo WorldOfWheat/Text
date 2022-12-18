@@ -1,8 +1,8 @@
 - apt 
-  collapsed:: true
   套件管理工具
+	- install 安裝
 	- update 更新
-- cat 
+- cat
   讀取檔內容
 - cd <路徑>
   移至<路徑>
