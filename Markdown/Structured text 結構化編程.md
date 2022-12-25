@@ -1,3 +1,4 @@
+
 # Structured text 結構化編程
 
 :::warning
@@ -25,11 +26,11 @@ ST全稱Structured text(結構化編程)，此語言主要是使用在PLC上的�
 ST的資料型態和其它語言並無不同，但需注意要事先在變數表宣告。
 
 ::: warning 
-**賦值使用 := 而不是 = ，因為在ST裡面 = 為關係運算** 
+賦值使用 := 而不是 = ，因為在ST裡面 = 為關係運算 
 :::
 
 舉例：
-```
+```Pascal=
 a := 50;
 b := TRUE;
 Y0 := TRUE;
@@ -69,7 +70,7 @@ word佔用16的bit，可以表達 $-2^{16}$ ~ $2^{16-1}-1$ 的有號數，是常
 
 > TON
 
-```
+```Pascal=
 ton1(IN := <條件式>, PT := <Time>);
 ```
 
@@ -78,10 +79,10 @@ ton1(IN := <條件式>, PT := <Time>);
 因為這個特性，可以使用下列的用法重複使用同樣的計時器：
 
 :::danger
-若同時存取同一個計時器將會導致不可預期的後果！
+若在 **同一時刻** 多方存取 **同一個** 計時器將會導致不可預期的後果！
 :::
 
-```
+```Pascal=
 ton1(IN := NOT ton1.Q, PT := <Time>);
 ```
 
@@ -89,13 +90,13 @@ PT 需要輸入Time，如：T#5s、T#50ms，或宣告一個Time在進行輸入�
 
 在讀取TON的狀態需要使用：
 
-```
+```Pascal=
 ton1.Q
 ```
 
 > R_TRIG
 
-```
+```Pascal=
 rt1(_CLK := <條件式>);
 ```
 
@@ -103,7 +104,7 @@ rt1(_CLK := <條件式>);
 
 如果要讀取狀態需要使用：
 
-```
+```Pascal=
 rt1.Q
 ```
 
@@ -133,8 +134,8 @@ $令 \\ a = 20 \\ b = 20 \\ c = 15$
 | :-: | :-- | :-: |
 | >   | 回傳 **左邊的數值** 是否大於 **右邊的數值** | $a > b = false \\ a > c = true \\ c > a = false$ |
 | <   | 回傳 **左邊的數值** 是否小於 **右邊的數值** | $a < b = false \\ c < a = true \\ a < c = false$ |
-| >=  | 回傳 **左邊的數值** 是否大於或等於 **右邊的數值** | $a >= b = true \\ a >= c = 1 \\ c >= a = false$ |
-| <=  | 回傳 **左邊的數值** 是否小於或等於 **右邊的數值** | $a <= b = true \\ c <= a = 1 \\ a <= c = false$ |
+| >=  | 回傳 **左邊的數值** 是否大於或等於 **右邊的數值** | $a >= b = true \\ a >= c = true \\ c >= a = false$ |
+| <=  | 回傳 **左邊的數值** 是否小於或等於 **右邊的數值** | $a <= b = true \\ c <= a = true \\ a <= c = false$ |
 | =   | 回傳 **左邊的數值** 是否等於 **右邊的數值** | $(a = b) = true \\ (a = c) = false$ |
 | <>  | 回傳 **左邊的數值** 是否不等於 **右邊的數值** | $a <> b = false \\ a <> c = true$ |
 
@@ -146,7 +147,7 @@ $令 \\ a = true \ \ b = true \\ c = false \ \ d = false$
 | --- | --- | --- |
 | NOT | 回傳 **右邊** 的布林值取**反** | $NOT \ a = false$ |
 | AND | 回傳 **左右兩邊** 的布林值是否皆為 **true** | $a \ AND \ b = true \\ a \ AND\ c = false$ |
-| OR  | 回傳 **左右兩邊** 的布林值是否有其中一者為 **true** | $a \ OR \ b = true \\ a \ OR \ c = 1 \\ c \ OR \ d = false$ |
+| OR  | 回傳 **左右兩邊** 的布林值是否有其中一者為 **true** | $a \ OR \ b = true \\ a \ OR \ c = true \\ c \ OR \ d = false$ |
 | XOR | 回傳 **左右兩邊** 的布林值為 true 的數量是否為 **奇數** | $a \ XOR \ b = false \\ a \ XOR \ c = true \\ c \ XOR \ d = false$ |
 
 ### 優先順序
@@ -174,13 +175,13 @@ $令 \\ a = true \ \ b = true \\ c = false \ \ d = false$
 :::
 
 > IF 條件判斷
-```=
+```Pascal=
 IF <條件式> THEN
 	
 END_IF;
 ```
 
-```=
+```Pascal=
 IF <條件式> THEN
 
 ELSIF <條件式2> THEN
@@ -191,15 +192,15 @@ END_IF;
 ```
 
 > CASE 多重選擇
-```=
+```Pascal=
 CASE <變數> OF
-	<狀態>:
+  <狀態>:
 	
-	<狀態2>:
+  <狀態2>:
 	
-	<狀態3>:
+  <狀態3>:
 ELSE
-	<其它狀態>
+  <其它狀態>
 END_CASE;
 ```
 
@@ -209,7 +210,7 @@ END_CASE;
 使用前在要先於變數表內宣告要使用的變數
 :::
 
-```=
+```Pascal=
 FOR <變數> := <初始值> TO <目標值> BY <遞增值> DO
 	
 END_FOR;
@@ -217,7 +218,7 @@ END_FOR;
 
 > WHILE 條件迴圈
 
-```=
+```Pascal=
 WHILE <條件式> DO
 
 END_WHILE;
@@ -228,16 +229,16 @@ END_WHILE;
 當迴圈需要在執行時中斷就可使用EXIT
 舉例：
 
-```=
+```Pascal=
 Y0 := FALSE;
 
 cnt := 0;
 WHILE TRUE DO
-	cnt := cnt + 1;
-	
-	IF cnt = 50 THEN
-		EXIT;
-	END_IF;
+  cnt := cnt + 1;
+
+  IF cnt = 50 THEN
+    EXIT;
+  END_IF;
 END_WHILE;
 
 Y0 := TRUE; (*Y0會在cnt計數到50的時候被執行*)
@@ -245,16 +246,16 @@ Y0 := TRUE; (*Y0會在cnt計數到50的時候被執行*)
 
 當使用RETURN時，程式會無條件跳轉到程式的最後一行。
 舉例：
-```=
+```Pascal=
 Y0 := FALSE;
 
 cnt := 0;
 WHILE TRUE DO
-	cnt := cnt + 1;
-	
-	IF cnt = 50 THEN
-		RETURN;
-	END_IF;
+  cnt := cnt + 1;
+
+  IF cnt = 50 THEN
+    RETURN;
+  END_IF;
 END_WHILE;
 
 Y0 := TRUE; (*Y0不會被執行到*)
@@ -284,17 +285,17 @@ ST可以使用一些在階梯圖難以實現的用法，且在ST有些用法也�
 使用時先將要使用的索引暫存器指定為要讀取的編號，在將索引暫存器做為IO的後綴。
 
 舉例：
-```=
+```Pascal=
 IF M8013 THEN
-	FOR ii := 0 TO 7 BY 1 DO
-		Z0 := ii;
-		Y0Z0 := TRUE;
-	END_FOR;
+  FOR ii := 0 TO 7 BY 1 DO
+    Z0 := ii;
+    Y0Z0 := TRUE;
+  END_FOR;
 ELSE
-	FOR ii := 0 TO 7 BY 1 DO
-		Z0 := ii;
-		Y0Z0 := FALSE;
-	END_FOR;
+  FOR ii := 0 TO 7 BY 1 DO
+    Z0 := ii;
+    Y0Z0 := FALSE;
+  END_FOR;
 END_IF;
 ```
 
@@ -306,25 +307,25 @@ END_IF;
 :::
 
 舉例：
-```=
+```Pascal=
 IF M8002 THEN
-	wstep := 0;
+  wstep := 0;
 END_IF;
 
 CASE wstep OF
-	0:
-	Y1 := FALSE;
-	Y0 := TRUE;
-	IF X0 THEN
-		wstep := 20;
-	END_IF;
-	
-	20:
-	Y0 := FALSE;
-	Y1 := TRUE;
-	IF X1 THEN
-		wstep := 0;
-	END_IF;
+  0:
+    Y1 := FALSE;
+    Y0 := TRUE;
+    IF X0 THEN
+      wstep := 20;
+    END_IF;
+
+  20:
+    Y0 := FALSE;
+    Y1 := TRUE;
+    IF X1 THEN
+      wstep := 0;
+    END_IF;
 END_CASE;
 ```
 
@@ -345,7 +346,7 @@ END_CASE;
 ### 看門狗計時器
 英文稱watchdog，其功能就像其名子一樣，會不斷的檢測PLC是否沒有回應，但有時候程式並沒有卡住，而是計算量過大，這個時候我們就需要調整看門狗計時器，在FX-3U這顆PLC中的看門狗變數為D8000，單位為毫秒。
 
-```=
+```Pascal=
 D8000 := 1000; (*設為一秒*)
 ```
 
