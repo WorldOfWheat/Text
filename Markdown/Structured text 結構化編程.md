@@ -1,4 +1,3 @@
-
 # Structured text 結構化編程
 
 :::warning
