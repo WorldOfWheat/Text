@@ -174,13 +174,13 @@ $令 \\ a = true \ \ b = true \\ c = false \ \ d = false$
 :::
 
 > IF 條件判斷
-```Pascal=
+```
 IF <條件式> THEN
 	
 END_IF;
 ```
 
-```Pascal=
+```=
 IF <條件式> THEN
 
 ELSIF <條件式2> THEN
@@ -191,7 +191,7 @@ END_IF;
 ```
 
 > CASE 多重選擇
-```Pascal=
+```=
 CASE <變數> OF
   <狀態>:
 	
@@ -209,7 +209,7 @@ END_CASE;
 使用前在要先於變數表內宣告要使用的變數
 :::
 
-```Pascal=
+```=
 FOR <變數> := <初始值> TO <目標值> BY <遞增值> DO
 	
 END_FOR;
@@ -217,7 +217,7 @@ END_FOR;
 
 > WHILE 條件迴圈
 
-```Pascal=
+```=
 WHILE <條件式> DO
 
 END_WHILE;
@@ -228,7 +228,7 @@ END_WHILE;
 當迴圈需要在執行時中斷就可使用EXIT
 舉例：
 
-```Pascal=
+```=
 Y0 := FALSE;
 
 cnt := 0;
@@ -245,7 +245,7 @@ Y0 := TRUE; (*Y0會在cnt計數到50的時候被執行*)
 
 當使用RETURN時，程式會無條件跳轉到程式的最後一行。
 舉例：
-```Pascal=
+```=
 Y0 := FALSE;
 
 cnt := 0;

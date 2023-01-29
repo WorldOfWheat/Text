@@ -26,7 +26,7 @@ Office LTSC為官方所提供的金鑰版，不需購買且功能完全一樣。
 3. 等待安裝完成即可。
 :::
 
-==[下載 Office LTSC 2021 安裝.zip](https://bit.ly/3WWPpH6)==
+==[下載 Office LTSC 2021 安裝.zip](https://bit.ly/3GHy8fI)==
 
 ---
 
