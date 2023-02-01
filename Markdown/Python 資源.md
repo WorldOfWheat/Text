@@ -10,6 +10,19 @@
 ### 字串
 [文字與字串 ( 常用方法 )](https://bit.ly/3Jg8q3C)
 
+:::warning
+> 常見問題
+
+* 倒轉字串
+[How to Reverse a String in Python](https://bit.ly/3WUSaYM)
+:::
+
+### 串列
+[Python 初學第五講 — 串列的基本用法](https://bit.ly/3HLYbTm)
+
+### 元組
+[[Python教學]Python Tuples快速上手](https://bit.ly/3XLuzv3)
+
 ### 字典
 [Python 初學第九講 — 字典](https://bit.ly/3Jr5ph2)
 
@@ -55,6 +68,8 @@
 ---
 
 ## 內建模組
+
+[Python 標準函式庫 (Standard Library)](https://bit.ly/3kS4xaN)
 
 ### bisect 二分搜、插入
 
