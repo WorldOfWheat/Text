@@ -20,6 +20,12 @@
 ### 串列
 [Python 初學第五講 — 串列的基本用法](https://bit.ly/3HLYbTm)
 
+:::danger
+* 串列在複制時要使用 .copy，否則將傳遞引用，導致原串列的值連同被更改。
+* 二維串列初始化要使用 行內for，否則結果將與預期不同。
+[How to initialize a two-dimensional array in Python?](https://bit.ly/3X5erUc)
+:::
+
 ### 元組
 [[Python教學]Python Tuples快速上手](https://bit.ly/3XLuzv3)
 
@@ -38,7 +44,7 @@
 :::warning
 > 常見問題
 
-* 函式傳list為引用
+* 函式傳遞list，參數為引用
 [Python函数值传递和引用传递（包括形式参数和实际参数的区别）](https://bit.ly/3DsggmS)
 [Python 函数参数引用（传值/传址）/copy/deepcopy](https://bit.ly/3DpHhHJ)
 :::
@@ -57,6 +63,16 @@
 ## 內部函數
 
 [內建函式](https://bit.ly/3HGXI52)
+
+:::warning
+> 常見問題
+
+* 進位互換
+[[Python] 二進制、八進制、十進制、十六進制等不同進制轉換方法](https://bit.ly/3YaKl2k)
+:::
+
+### format()
+[Python format 格式化函数](https://bit.ly/3l0SQyL)
 
 ### hex()
 [Python hex() 函数](https://bit.ly/3Doo3lB)
