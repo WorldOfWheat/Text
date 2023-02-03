@@ -38,6 +38,12 @@
 ### for
 [Python For Loops](https://bit.ly/3HCdQ7C)
 
+### with
+[Python 中 with 用法及原理](https://bit.ly/40ptIlu)
+
+### 例外處理
+[例外處理 ( try、except )](https://bit.ly/3JHkLho)
+
 ### 函式
 [函式 function](https://bit.ly/3HHOs0s)
 
@@ -55,9 +61,6 @@
 ### 裝飾器
 [Python 裝飾器 Decorator - 基本篇 By 彭彭](https://bit.ly/3HdXDEp)
 
-### 檔案讀寫
-[Python — 資料檔案的寫入與讀取](https://bit.ly/3XM1gbR)
-
 ---
 
 ## 內部函數
@@ -69,13 +72,14 @@
 
 * 進位互換
 [[Python] 二進制、八進制、十進制、十六進制等不同進制轉換方法](https://bit.ly/3YaKl2k)
+* ASCII和字元互換
+[Convert int to ASCII and back in Python](https://bit.ly/3JBHQCb)
+* 檔案讀寫
+[Python — 資料檔案的寫入與讀取](https://bit.ly/3XM1gbR)
 :::
 
 ### format()
 [Python format 格式化函数](https://bit.ly/3l0SQyL)
-
-### hex()
-[Python hex() 函数](https://bit.ly/3Doo3lB)
 
 ### map()
 
@@ -89,9 +93,9 @@
 
 ### bisect 二分搜、插入
 
-:::danger
-**二分搜**的時間複雜度為 $O(logN)$
-**插入**的時間為 $O(NlogN)$
+:::warning
+* **二分搜**的時間複雜度為 $O(logN)$
+* **插入**的時間為 $O(NlogN)$
 :::
 
 [bisect --- 陣列二分演算法 (Array bisection algorithm)](https://bit.ly/3wInwHG)
@@ -122,6 +126,9 @@
 * CSS、圖讀不到
 [Python網頁設計：Flask使用筆記(二)- 搭配HTML和CSS](https://bit.ly/409i79U)
 :::
+
+### SortedContainers 樹狀容器
+[Python Sorted Containers讓我有點意外的小發現](https://bit.ly/3JAyOp9)
 
 ---
 
