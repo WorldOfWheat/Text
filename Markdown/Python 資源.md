@@ -32,6 +32,18 @@
 ### 字典
 [Python 初學第九講 — 字典](https://bit.ly/3Jr5ph2)
 
+:::danger
+* 字典的key如果沒有初始值會在讀取時報錯，
+如果預設值為基本型別則可以使用下方解法
+```python=
+dict = {}
+dict.setdefault('0')
+```
+如果預設值為陣列等則可以使用下方解法
+![](https://i.imgur.com/8TAI0zR.png)
+[Python dictionary keys. "In" complexity](https://bit.ly/3Yo647g)
+:::
+
 ### 集合
 [[Python] 學習使用集合 (Set)](https://bit.ly/3RftHfQ)
 
@@ -40,6 +52,9 @@
 
 ### with
 [Python 中 with 用法及原理](https://bit.ly/40ptIlu)
+
+### in、is
+[Python 中 in 的用法总结](https://bit.ly/3Y2EGf1)
 
 ### 例外處理
 [例外處理 ( try、except )](https://bit.ly/3JHkLho)
@@ -105,7 +120,7 @@
 
 [heapq --- 堆積佇列 (heap queue) 演算法](https://bit.ly/3YsOiQj)
 
-### os 系統操作
+### os 檔案操作
 [檔案操作 os](https://bit.ly/3wwiDRZ)
 
 ### random 亂數
