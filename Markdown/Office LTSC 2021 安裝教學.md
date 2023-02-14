@@ -1,4 +1,4 @@
-# Office LTSC 2021 安裝教學
+# Office LTSC 2021 安裝教學 
 
 Office LTSC為官方所提供的金鑰版，不需購買且功能完全一樣。
 
@@ -11,17 +11,21 @@ Office LTSC為官方所提供的金鑰版，不需購買且功能完全一樣。
 ## 自動安裝
 
 :::warning
-僅在 Windows 10/11 測試成功，其它系統不一定能成功。
-自動安裝腳本內包含 Word、Excel、PowerPoint、Access，如要安裝其它服務則需使用手動安裝。
+* 僅在 Windows 10/11 測試成功，其它系統不一定能成功。
+* 自動安裝腳本內包含 Word、Excel、PowerPoint、Access，如要安裝其它服務則需使用手動安裝。
+:::
+
+:::danger
+* 安裝前先**解除先前安裝**的 Office，如果沒有則可跳過此步。
 :::
 
 :::info
-自動安裝使用 Windows Bat 腳本執行，可以點擊下方的超連結進行下載。
+* 自動安裝使用 Windows Bat 腳本執行，可以點擊下方的超連結進行下載。
 :::
 
 :::info
 **步驟**
-1. 將 ++Office LTSC 2021 安裝.zip++ 解壓縮至同一個資料夾。
+1. 將 ++Office LTSC 2021 安裝.zip++ 解壓縮至**同一個**資料夾。
 2. 使用系統管理員執行 ++Run（需以系統管理員執行）.bat++。
 3. 等待安裝完成即可。
 :::
@@ -33,7 +37,7 @@ Office LTSC為官方所提供的金鑰版，不需購買且功能完全一樣。
 ## 手動安裝
 
 :::info
-手動安裝步驟較多，可以分為下面幾步。
+* 手動安裝步驟較多，可以分為下面幾步。
 :::
 
 :::info
@@ -75,3 +79,4 @@ cscript ospp.vbs /act
 
 {%youtube XLjUfzoJYgo %}
 
+{%hackmd 8jKiAYScS9mHgWyDe_SNNA %}
