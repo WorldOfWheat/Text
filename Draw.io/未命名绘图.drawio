@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" modified="2023-08-18T06:52:54.338Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="Cs9dxe6oSBvf4My6hJ7q" version="21.6.8" type="github">
+  <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
+    <mxGraphModel dx="2113" dy="1157" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pyfSCo66cifnsj62iawL-2287" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="pyfSCo66cifnsj62iawL-2257" target="pyfSCo66cifnsj62iawL-2284">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2257" value="User" style="shape=mxgraph.cisco.people.androgenous_person;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="90" width="69" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2258" value="Host" style="shape=mxgraph.cisco.servers.standard_host;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="53" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2267" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="pyfSCo66cifnsj62iawL-2261" target="pyfSCo66cifnsj62iawL-2263">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2288" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="pyfSCo66cifnsj62iawL-2261" target="pyfSCo66cifnsj62iawL-2284">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2261" value="&lt;div&gt;Wireguard Client&lt;/div&gt;" style="shape=mxgraph.cisco.switches.generic_softswitch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="306" y="93.5" width="50" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2272" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="pyfSCo66cifnsj62iawL-2263" target="pyfSCo66cifnsj62iawL-2269">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2263" value="&lt;div&gt;Wireguard Server&lt;br&gt;&lt;/div&gt;" style="shape=mxgraph.cisco.switches.generic_softswitch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="93.5" width="50" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2289" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="pyfSCo66cifnsj62iawL-2269" target="pyfSCo66cifnsj62iawL-2258">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2291" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="pyfSCo66cifnsj62iawL-2269" target="pyfSCo66cifnsj62iawL-2275">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="150" />
+              <mxPoint x="550" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2269" value="Firewall" style="shape=mxgraph.cisco.security.firewall;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="594" y="97.5" width="29" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2275" value="&lt;div&gt;Internet&lt;/div&gt;" style="shape=mxgraph.cisco.storage.cloud;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="306" y="260" width="186" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pyfSCo66cifnsj62iawL-2284" value="Firewall" style="shape=mxgraph.cisco.security.firewall;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="178" y="93.5" width="29" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
