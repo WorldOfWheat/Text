@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-18T07:37:58.631Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="cTzdL6nRFbhKsVWHMSiD" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-18T07:41:52.017Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="rMGxyYoJ4jHe-Nssk1Ot" version="21.6.8" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
-    <mxGraphModel dx="1585" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="437" dy="239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,7 +15,7 @@
         <mxCell id="0-0zIx_9ccKQPmnC_EUt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="qMRLxm-rLrutaJmakqVO-5" target="qMRLxm-rLrutaJmakqVO-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qMRLxm-rLrutaJmakqVO-5" value="&lt;div&gt;Docker&lt;/div&gt;" style="shape=mxgraph.cisco.misc.bridge;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;direction=east;" parent="1" vertex="1">
+        <mxCell id="qMRLxm-rLrutaJmakqVO-5" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Docker&lt;/div&gt;" style="shape=mxgraph.cisco.misc.bridge;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=middle;verticalAlign=middle;align=right;outlineConnect=0;direction=east;labelPosition=left;fontColor=#000000;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="793" y="240" width="74" height="56" as="geometry" />
         </mxCell>
         <mxCell id="qMRLxm-rLrutaJmakqVO-20" value="" style="group" parent="1" vertex="1" connectable="0">
